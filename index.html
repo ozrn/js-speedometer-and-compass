@@ -82,6 +82,10 @@
 
     navigator.geolocation.watchPosition(data => { // watchPosition: Registers a handler function that will be called automatically each time the position of the device changes, returning the updated location.
       console.log(data);
+
+      arrow.style.transform = `rotate(${data.coords.heading}deg)`; // heading: is the number of degrees relative of north
+
+
     })
   </script>
 

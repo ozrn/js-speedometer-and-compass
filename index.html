@@ -76,6 +76,13 @@
   </style>
 
   <script>
+
+    const arrow = document.querySelector(".arrow");
+    const speed = document.querySelector(".speed-value");
+
+    navigator.geolocation.watchPosition(data => { // watchPosition: Registers a handler function that will be called automatically each time the position of the device changes, returning the updated location.
+      console.log(data);
+    })
   </script>
 
 </body>

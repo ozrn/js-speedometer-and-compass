@@ -87,7 +87,10 @@
 
       speed.textContent = data.coords.speed;
 
+    }, (err) => {
+      console.error(`ERROR(${err.code}): ${err.message}`);
     })
+
   </script>
 
   </body>
